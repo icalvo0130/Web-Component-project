@@ -12,10 +12,17 @@ class Header extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         header {
-          background-color: #333;
-          color: white;
+          color: Black;
           padding: 1rem;
-          text-align: center;
+          font-family: 'arial', sans-serif;
+        }
+        h1 {
+          font-size: 55px;
+          margin: 0;
+        }
+        p {
+          font-size: 15px;
+          margin: 10px;
         }
       </style>
       <header>
