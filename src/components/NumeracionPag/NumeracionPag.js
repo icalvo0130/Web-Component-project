@@ -1,4 +1,4 @@
-class News extends HTMLElement {
+class NumeracionPag extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -11,17 +11,16 @@ class News extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        .news {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        .numeracion {
+          display: flex;
+          justify-content: center;
           gap: 1rem;
+          margin: 1rem 0;
         }
       </style>
-      <div class="news">
-
-      </div>
+      <div class="numeracion"></div>
     `;
   }
 }
 
-export default News;
+export default NumeracionPag;

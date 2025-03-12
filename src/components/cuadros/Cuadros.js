@@ -1,4 +1,4 @@
-class News extends HTMLElement {
+class Cuadros extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -11,17 +11,17 @@ class News extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        .news {
+        .cuadros {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
           gap: 1rem;
         }
       </style>
-      <div class="news">
+      <div class="cuadros">
 
       </div>
     `;
   }
 }
 
-export default News;
+export default Cuadros;
