@@ -29,11 +29,11 @@ static get observedAttributes() {
       </style>
       <div class="cuadros">
       <img src="${this.getAttribute('imagenCuadro')}"></img>
-      <p>${this.getAttribute('miniTitulo')}</p>
-      <p>${this.getAttribute('titulo')}</p>
-      <p>${this.getAttribute('descripcion')}</p>
-      <p>${this.getAttribute('autor')}</p>
-      <p>${this.getAttribute('fecha')}</p>
+        <p>${this.getAttribute('miniTitulo')}</p>
+        <p>${this.getAttribute('titulo')}</p>
+        <p>${this.getAttribute('descripcion')}</p>
+        <p>${this.getAttribute('autor')}</p>
+        <p>${this.getAttribute('fecha')}</p>
       </div>
     `;
   }

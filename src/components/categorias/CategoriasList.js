@@ -1,4 +1,4 @@
-import getCategorias from "../categorias/getCategorias.js";
+import getCategorias from "./getCategorias.js";
 
 class CategoriasLists extends HTMLElement {
   constructor() {

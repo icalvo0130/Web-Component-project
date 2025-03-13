@@ -1,4 +1,4 @@
-import getCuadros from "../cuadros/getCuadros.js";
+import getCuadros from "./getCuadros.js";
 
 class CuadrosLists extends HTMLElement {
   constructor() {
