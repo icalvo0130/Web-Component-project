@@ -12,12 +12,12 @@ class NewsList extends HTMLElement {
         <ul>
             ${news.map((news) => `
                 <news-element
-                miniTitulo2="${news.miniTitulo2}"
-                titulo2="${news.titulo2}" 
+                miniTitulo="${news.miniTitulo}"
+                titulo="${news.titulo}" 
                 texto="${news.texto}"
                 circuloimg="${news.circuloimg}"
-                autor2="${news.autor2}"
-                fecha2="${news.fecha2}">
+                autor="${news.autor}"
+                fecha="${news.fecha}">
                 </news-element>
             `).join('')}
         </ul>

@@ -3,7 +3,8 @@ class Cuadros extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
   }
-static get observedAttributes() {
+
+  static get observedAttributes() {
     return ['imagenCuadro', 'miniTitulo', 'titulo', 'descripcion', 'autor', 'fecha'];
   }
   
@@ -28,7 +29,7 @@ static get observedAttributes() {
           }
       </style>
       <div class="cuadros">
-      <img src="${this.getAttribute('imagenCuadro')}"></img>
+        ${this.getAttribute('imagenCuadro') !== "undefined" ? `<img src="${this.getAttribute('imagenCuadro')}"></img>` : ''}
         <p>${this.getAttribute('miniTitulo')}</p>
         <p>${this.getAttribute('titulo')}</p>
         <p>${this.getAttribute('descripcion')}</p>

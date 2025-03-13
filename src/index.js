@@ -6,7 +6,7 @@ import CuadrosList from './components/cuadros/CuadrosList.js';
 import Cuadros from './components/cuadros/Cuadros.js';
 import News from './components/news/News.js';
 import NewsList from './components/news/NewsList.js';
-import NumeracionPag from './components/NumeracionPag/NumeracionPag.js';
+import NumeracionPag from './components/numeracionPag/NumeracionPagList.js';
 
 customElements.define('header-element', Header);
 
@@ -24,7 +24,7 @@ customElements.define('news-element', News);
 
 customElements.define('news-list', NewsList);
 
-customElements.define('NumeracionPag-element', NumeracionPag);
+customElements.define('numeracionpag-element', NumeracionPag);
 
 
 

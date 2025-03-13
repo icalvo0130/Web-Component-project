@@ -3,6 +3,10 @@ class News extends HTMLElement {
       super();
       this.attachShadow({ mode: 'open' });
     }
+
+    static get observedAttributes() {
+      return ['miniTitulo', 'titulo', 'texto', 'circuloimg','autor', 'fecha'];
+    }
   
     connectedCallback() {
       this.render();
@@ -18,12 +22,12 @@ class News extends HTMLElement {
           }
         </style>
         <div class="news">
-          <p>${this.getAttribute('miniTitulo2')}</p>
-          <p>${this.getAttribute('titulo2')}</p>
+          <p>${this.getAttribute('miniTitulo')}</p>
+          <p>${this.getAttribute('titulo')}</p>
           <p>${this.getAttribute('texto')}</p>
           <img src="${this.getAttribute('circuloimg')}"></img> 
-          <p>${this.getAttribute('autor2')}</p>
-          <p>${this.getAttribute('fecha2')}</p>
+          <p>${this.getAttribute('autor')}</p>
+          <p>${this.getAttribute('fecha')}</p>
   
         </div>
       `;
