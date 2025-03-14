@@ -13,7 +13,6 @@ class Search extends HTMLElement {
     
       <style>
       .search-container {
-      position: absolute;
       right: 20px; 
       top: 50%; 
       display: flex;

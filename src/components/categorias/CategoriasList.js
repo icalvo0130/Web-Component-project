@@ -49,16 +49,24 @@ class CategoriasLists extends HTMLElement {
       background-color: rgb(255, 255, 255);
       }
 
+      div {
+        display: flex;
+        items-align: center;
+      }
       
     </style>
     
-    <ul>
-      ${categorias.map((categoria, index) => `
-        <li>
-        <button class="${index === 0 ? "selected" : ""}">${categoria.textoCategoria}</button>
-          </li>
-      `).join(" ")}
-    </ul>
+    <div>
+
+      <ul>
+        ${categorias.map((categoria, index) => `
+          <li>
+          <button class="${index === 0 ? "selected" : ""}">${categoria.textoCategoria}</button>
+            </li>
+        `).join(" ")}
+      </ul>
+      <search-element></search-element>
+    </div>
     `;
 
     this.addEventListeners();
