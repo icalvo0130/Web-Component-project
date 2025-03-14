@@ -10,31 +10,48 @@ class Search extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = `
+    
       <style>
-        search {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-          margin: 1rem 0;
-        }
-        input {
-          width: 100%;
-          padding: 0.5rem;
-          border: 1px solid #ccc;
-        }
-        icono {
-          background-color: #f1c40f;
-          color: white;
-          padding: 0.5rem;
-          border: none;
-          cursor: pointer;
-        }
-      </style>
-      <search>
-      <div class="searchYlupa">
-        <input type="text" placeholder="Search...">
-        <icono>🔍</icono>
-      </search>
+      .search-container {
+      position: absolute;
+      right: 20px; 
+      top: 50%; 
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 5px 10px;
+      width: 200px;
+      background-color: #f8f9fa;
+      transition: border 0.3s ease;
+    }
+
+    .search-container:hover {
+      border: 1px solid #8893a0; 
+    }
+
+    .search-icon {
+      font-size: 16px;
+      color: #666;
+      margin-right: 5px;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 14px;
+      color: #333;
+    }
+
+          </style>
+          <search>
+          <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
+          </search>
     `;
     }
  }
