@@ -10,24 +10,27 @@ class Search extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = `
-    
       <style>
+    
       .search-container {
-      right: 20px; 
-      top: 50%; 
+      position: absolute;
+      right: 0;
       display: flex;
-      align-items: center;
+      align-items: right;
       border: 1px solid #ccc;
       border-radius: 10px;
       padding: 5px 10px;
       width: 200px;
       background-color: #f8f9fa;
       transition: border 0.3s ease;
+      margin-right: 135px;
+  
     }
 
     .search-container:hover {
       border: 1px solid #8893a0; 
     }
+
 
     .search-icon {
       font-size: 16px;
@@ -38,6 +41,7 @@ class Search extends HTMLElement {
     .search-input {
       border: none;
       outline: none;
+      flex-grow: 1;
       background: transparent;
       width: 100%;
       font-size: 14px;

@@ -15,6 +15,7 @@ class Header extends HTMLElement {
           color: Black;
           padding: 1rem;
           font-family: 'arial', sans-serif;
+          margin-left: 45px;
         }
         h1 {
           font-size: 55px;

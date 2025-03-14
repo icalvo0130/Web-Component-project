@@ -52,11 +52,15 @@ class CategoriasLists extends HTMLElement {
       div {
         display: flex;
         items-align: center;
+       }
+
+      .seccionarriba {
+      margin-left: 55px;
       }
-      
+
     </style>
     
-    <div>
+    <div class="seccionarriba">
 
       <ul>
         ${categorias.map((categoria, index) => `

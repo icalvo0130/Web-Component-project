@@ -36,15 +36,6 @@ class News extends HTMLElement {
         max-width: 48%; 
       }
 
-      .news-card {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        gap: 10px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        background: white;
-      }
 
         .miniTitulo {
           font-size: 12px;

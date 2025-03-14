@@ -1,6 +1,6 @@
 import Header from './components/header/header.js';
 import CategoriasList from './components/categorias/CategoriasList.js';
-import Search from './components/search/Search.js';
+import Search from './components/search/search.js';
 import CuadrosList from './components/cuadros/CuadrosList.js';
 import Cuadros from './components/cuadros/Cuadros.js';
 import News from './components/news/News.js';
